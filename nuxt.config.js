@@ -3,7 +3,8 @@ import colors from 'vuetify/es5/util/colors'
 console.log(process.env.REPOSITORY)
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/nuxt-github-page-template/'
+    // base: '/nuxt-github-page-template/'
+    base: '/sample-test/'
   }
 } : {};
 
