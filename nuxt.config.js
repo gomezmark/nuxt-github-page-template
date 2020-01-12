@@ -22,7 +22,7 @@ export default {
     ]
   },
   router: {
-    base: `https://gomezmark.github.io/nuxt-github-page-template/`
+    base: `/nuxt-github-page-template/`
   },
   /*
   ** Customize the progress-bar color
