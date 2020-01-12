@@ -1,10 +1,14 @@
 import colors from 'vuetify/es5/util/colors'
 
+console.log(process.env.REPOSITORY)
 export default {
   mode: 'spa',
   /*
   ** Headers of the page
   */
+  env: {
+    REPOSITORY: process.env.REPOSITORY
+  },
   head: {
     titleTemplate: '%s - ' + process.env.npm_package_name,
     title: process.env.npm_package_name || '',
@@ -18,7 +22,7 @@ export default {
     ]
   },
   router: {
-    base: process.env.DEPLOY_ENV === "GH_PAGE" ? `${process.env.REPOSITORY}/dist/` : ''
+    base: `https://gomezmark.github.io/nuxt-github-page-template/`
   },
   /*
   ** Customize the progress-bar color

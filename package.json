@@ -8,8 +8,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate:gh_page": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "push-dir --dist=dist --branch=gh_pages --cleanup"
+    "generate:gh_page": "nuxt generate",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
