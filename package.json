@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "My dazzling Nuxt.js project",
   "author": "gomezmark",
-  "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate:gh_page": "nuxt generate",
+    "generate:gh_page": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
