@@ -18,7 +18,7 @@ export default {
     ]
   },
   router: {
-    base: process.env.GH_PAGE === "GH_PAGE" ? process.env.REPOSITORY : ''
+    base: process.env.DEPLOY_ENV === "GH_PAGE" ? `${process.env.REPOSITORY}/dist/` : ''
   },
   /*
   ** Customize the progress-bar color
