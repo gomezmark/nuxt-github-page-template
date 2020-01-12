@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "My dazzling Nuxt.js project",
   "author": "gomezmark",
+  "homepage": "https://gomezmark.github.io/nuxt-github-page-template/",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
